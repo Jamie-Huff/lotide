@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(string) {
+const letterPositions = function(string) {
   stringArray = string.split(' ').join('')
   let finalLetterCountObject = {}
   stringArray = stringArray.split('')
@@ -22,8 +22,8 @@ const countLetters = function(string) {
   return finalLetterCountObject
 }
 
-console.log(countLetters("big string"))
+console.log(letterPositions("big string"))
 
-let finalObject = countLetters("big string")
+let finalObject = letterPositions("big string")
 console.log(finalObject)
 assertEqual(finalObject["i"], 2)

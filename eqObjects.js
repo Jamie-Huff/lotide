@@ -21,9 +21,6 @@ const eqArrays = function(array1, array2) {
   return true
 }
 
-
-
-
 const eqObjects = function(object1, object2) {
   let obj1Length = 0
   let obj2Length = 0
@@ -51,17 +48,16 @@ const eqObjects = function(object1, object2) {
     }
     if (Array.isArray(object1[key])) {
       arrayEqual = eqArrays(object1[key], object2[key])
-      // if (object1[key].length !== object2[key].length) {
-      //   return false
-      // }
-      // for (let i = 0; i < object1[key].length; i++) {
-      //   if (object1[key][i] !== object2[key][i]) {
-      //     return false
-      //   }
-      // }
+      if (object1[key].length !== object2[key].length) {
+        return false
+      }
+      for (let i = 0; i < object1[key].length; i++) {
+        if (object1[key][i] !== object2[key][i]) {
+          return false
+        }
+      }
     }
   }
-  
   if (!arrayEqual) {
     return false
   }
@@ -84,7 +80,6 @@ let secondObj = {
   kids: ["bob", "joe", "steve"]
 }
 
-console.log(eqObjects(firstObj, secondObj))
 console.log(assertEqual(eqObjects(firstObj, secondObj), true))
 console.log(assertEqual(eqObjects(cd, dc), true))
 console.log(assertEqual(eqObjects(cd, cd2), false))

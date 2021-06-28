@@ -14,7 +14,7 @@ const eqArrays = function(array1, array2) {
 }
 
 
-const recursiveEqObjects = function(object1, object2) {
+const eqObjects = function(object1, object2) {
 
   let array1 = []
   let array2 = []
@@ -26,7 +26,7 @@ const recursiveEqObjects = function(object1, object2) {
       if (!eqArrays(object1[key], object2[key])) {return false}
       
     } else if(typeof object1[key] === 'object' && typeof object2[key] === 'object') {
-      return recursiveEqObjects(object1[key], object2[key])
+      return eqObjects(object1[key], object2[key])
 
     } else if (typeof key === 'string') {
       array1.push(object1[key])
@@ -64,5 +64,5 @@ let secondObj = {
   nestarino: {dog: 'actually no', bear: {brown: ['black', 'small']}}
 }
 
-console.log(recursiveEqObjects(firstObj, secondObj), true)
+console.log(eqObjects(firstObj, secondObj), true)
 //console.log(recursiveEqObjects(cd, cd2), false)

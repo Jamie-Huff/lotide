@@ -1,6 +1,10 @@
 const assertArrayEqual = require("./assertArraysEqual")
 
 const middle = function (array) {
+  if (array.length === 0) {
+    return [undefined]
+  }
+  console.log(array)
   let finalArray = []
   if (array.length === 2 || array.length === 1) {
     return []

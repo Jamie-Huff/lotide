@@ -78,3 +78,5 @@ assertObjectEqual(cd, dc)
 assertObjectEqual(cd, cd2)
 
 //Assertion Failed! {a: 1, b: 2} !== {a: 2, c:3}
+
+module.exports = assertObjectEqual

@@ -66,3 +66,6 @@ let secondObj = {
 
 console.log(eqObjects(firstObj, secondObj), true)
 //console.log(recursiveEqObjects(cd, cd2), false)
+
+
+module.exports = eqObjects

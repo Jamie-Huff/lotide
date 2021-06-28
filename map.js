@@ -52,3 +52,5 @@ instead of asking for word => word[0], which is then pushing word[0] to our newA
 I am asking for word => word.length, which is then pushing word.length to our newArray
 which returns us an array of numbers
 */
+
+module.exports = map

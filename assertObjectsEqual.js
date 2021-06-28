@@ -74,8 +74,8 @@ const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
 const cd2 = { c: "1", d: ["2", 3, 4] };
 
-assertObjectEqual(cd, dc)
-assertObjectEqual(cd, cd2)
+// assertObjectEqual(cd, dc)
+// assertObjectEqual(cd, cd2)
 
 //Assertion Failed! {a: 1, b: 2} !== {a: 2, c:3}
 

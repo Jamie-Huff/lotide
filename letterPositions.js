@@ -38,9 +38,9 @@ const letterPositions = function(string) {
 
 
 
-console.log(letterPositions("big string"))
-let letterFinalObject = letterPositions("big string")
+// console.log(letterPositions("big string"))
+// let letterFinalObject = letterPositions("big string")
 
-console.log(assertArrayEqual(letterFinalObject["i"], [ 1, 7]))
+// console.log(assertArrayEqual(letterFinalObject["i"], [ 1, 7]))
 
 module.exports = letterPositions

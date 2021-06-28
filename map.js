@@ -33,14 +33,14 @@ const map = (array, callback/*this is a function*/) => {
 
 //--------------------------------------------------------------------------
 
-let words = ["ground", "control", "to", "major", "tom"];
-let results1 = map(words, word => word[0]);
-console.log(assertArrayEqual(results1, ["g", "c", "t", "m", "t"] ))
+// let words = ["ground", "control", "to", "major", "tom"];
+// let results1 = map(words, word => word[0]);
+// console.log(assertArrayEqual(results1, ["g", "c", "t", "m", "t"] ))
 
 
-words = ["this", "dog", "is", "a", "racoon"];
-results1 = map(words, word => word.length);
-console.log(assertArrayEqual(results1, [4, 3, 2, 1, 6] ))
+// words = ["this", "dog", "is", "a", "racoon"];
+// results1 = map(words, word => word.length);
+// console.log(assertArrayEqual(results1, [4, 3, 2, 1, 6] ))
 //---------------------------------------------------------------------------
 /* 
 Syntax notes

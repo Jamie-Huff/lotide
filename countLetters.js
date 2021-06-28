@@ -22,8 +22,8 @@ const letterPositions = function(string) {
   return finalLetterCountObject
 }
 
-console.log(letterPositions("big string"))
+// console.log(letterPositions("big string"))
 
-let finalObject = letterPositions("big string")
-console.log(finalObject)
-assertEqual(finalObject["i"], 2)
+// let finalObject = letterPositions("big string")
+// console.log(finalObject)
+// assertEqual(finalObject["i"], 2)

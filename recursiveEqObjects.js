@@ -64,7 +64,7 @@ let secondObj = {
   nestarino: {dog: 'actually no', bear: {brown: ['black', 'small']}}
 }
 
-console.log(eqObjects(firstObj, secondObj), true)
+// console.log(eqObjects(firstObj, secondObj), true)
 //console.log(recursiveEqObjects(cd, cd2), false)
 
 

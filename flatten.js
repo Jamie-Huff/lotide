@@ -33,6 +33,6 @@ const flatten = function(array) {
   return finalArray
 }
 
-console.log(assertArrayEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]))
+// console.log(assertArrayEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]))
 
 module.exports = flatten.js

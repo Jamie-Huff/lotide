@@ -80,8 +80,8 @@ let secondObj = {
   kids: ["bob", "joe", "steve"]
 }
 
-console.log(assertEqual(eqObjects(firstObj, secondObj), true))
-console.log(assertEqual(eqObjects(cd, dc), true))
-console.log(assertEqual(eqObjects(cd, cd2), false))
+// console.log(assertEqual(eqObjects(firstObj, secondObj), true))
+// console.log(assertEqual(eqObjects(cd, dc), true))
+// console.log(assertEqual(eqObjects(cd, cd2), false))
 
 module.exports = eqObjects

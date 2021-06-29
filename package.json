@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "jamie-huff-lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A library of functions made for lighthouse labs.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Jamie-Huff/lotide.git"
   },
-  "author": "",
+  "author": "Jamie Huff",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jamie-Huff/lotide/issues"
